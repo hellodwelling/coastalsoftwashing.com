@@ -1,13 +1,17 @@
 
 
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Pressure Washing &amp; Soft Washing in  Austin,  TX 78701 | Coastal Home &amp; Auto Detailing |  Service | service-Boat-Detailing </title>
+        <title>Pressure Washing &amp; Soft Washing in Craven, NC | Coastal Home &amp; Auto Detailing |  Service | Boat Detailing</title>
+        <meta name="description" content="We use only the best products and techniques to wash and polish your boat, so you can enjoy it for years to come.">
         <!-- <title>ProPhone Templates</title> -->
         <!-- TailwindCSS  -->
         <!-- <link rel="stylesheet" type="text/css" href="/staticfiles/landing_page_gen/tailwind.css"> -->
@@ -18,7 +22,7 @@
            
 
         
-        <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
+        <link defer href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
         <!-- Include Scripts -->
         <!-- Header Component, only used for presentation -->
 
@@ -34,7 +38,7 @@
 <script defer src="https://unpkg.com/alpinejs@3.7.0/dist/cdn.min.js"></script>
 <!-- Focus Visible Polyfill -->
 <script defer src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script> -->
         <style>
@@ -58,7 +62,7 @@
                 --color-primary-foreground: hsl(0, 0%, var(--switch));
             }
         </style>
-                <script type="text/javascript">
+                <script type="text/javascript" defer>
                     function send_sms(slug){
                         console.log('send_sms', slug)
                         // var sender_fname = $(`#${form_num}-first-name`).val()
@@ -92,8 +96,7 @@
                         var sender_services = ""
         
                         console.log("text", slug, sender_fname, sender_lname, sender_number, sender_message)
-                        // return ' bucks'
-                        // fetch('http://127.0.0.1:8000/sms/' + slug , {
+
                         fetch('https://prophone.herokuapp.com/sms/' + slug , {
                             method: 'POST',
                             body: JSON.stringify({
@@ -1028,7 +1031,7 @@
                                             <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1dcebd29-1612-4335-97c2-c8d65a7c5ae8.jpeg" alt="" /> -->
                                             <img class="object-cover" 
                                                 src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1dcebd29-1612-4335-97c2-c8d65a7c5ae8.jpeg" 
-                                                alt="" 
+                                                alt="Boat Detailing for Coastal Home &amp; Auto Detailing in Craven, NC"
                                                 style="
                                                     max-width: 960px;
                                                     height: auto;
@@ -1053,7 +1056,7 @@
                                             <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/5d90dacf-51ae-40f6-87b9-6d1ea3b2d148.jpeg" alt="" /> -->
                                             <img class="object-cover" 
                                                 src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/5d90dacf-51ae-40f6-87b9-6d1ea3b2d148.jpeg" 
-                                                alt="" 
+                                                alt="Boat Detailing for Coastal Home &amp; Auto Detailing in Craven, NC"
                                                 style="
                                                     max-width: 960px;
                                                     height: auto;
@@ -1078,7 +1081,7 @@
                                             <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/552a0240-56a9-422c-a0cf-357942d6e9b9.jpeg" alt="" /> -->
                                             <img class="object-cover" 
                                                 src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/552a0240-56a9-422c-a0cf-357942d6e9b9.jpeg" 
-                                                alt="" 
+                                                alt="Boat Detailing for Coastal Home &amp; Auto Detailing in Craven, NC"
                                                 style="
                                                     max-width: 960px;
                                                     height: auto;
@@ -1458,7 +1461,7 @@
                 <!-- Your map here -->
                 <div class="w-full h-full bg-gray-400">
                     <div style="height:500px; width:100%;" id="map"></div>
-                    <script >
+                    <script defer>
                         async function coordinate(url) {
                             const res = await fetch(url)
                             const coordinates = await res.json()
@@ -1516,6 +1519,7 @@
                     </script>
                     <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSw3qRocbSgfTrtxZbCsTjSHZaaJuUXF4&callback=initMap&libraries=&v=weekly"
+                    defer
                     async
                   ></script> 
               
@@ -1604,7 +1608,7 @@
               <div class="flex space-x-6">
                   <!-- are these conditional? and linked to corret links? -->
                   
-                  <a target="_blank" rel="noopener noreferrer" href="//facebook.com/coastalhomeandautodetailing" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                  <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/coastalhomeandautodetailing" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
                       <span class="sr-only">Facebook</span>
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path
@@ -1677,6 +1681,13 @@
                           
                           
                           
+                          <li>
+                              <a
+                                  href='sitemap.xml'
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Sitemap</a
+                              >
+                          </li>
                       </ul>
                   </div>
                   <!-- Services Links -->
@@ -1777,7 +1788,7 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Sun: 0:00am - 0:00am</a
+                                  >Sun: 8:00am - 6:00pm</a
                               >
                           </li>
                           
@@ -1785,7 +1796,7 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Mon: 0:00am - 0:00am</a
+                                  >Mon: 8:00am - 6:00pm</a
                               >
                           </li>
                           
@@ -1801,7 +1812,7 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Wed: 8:00am - 6:00pm</a
+                                  >Wed: 0:00am - 0:00am</a
                               >
                           </li>
                           
@@ -1809,7 +1820,7 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Thu: 8:00am - 6:00pm</a
+                                  >Thu: 0:00am - 0:00am</a
                               >
                           </li>
                           
@@ -2006,82 +2017,82 @@
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-145952"
-                                            name="145952"
+                                            id="contact-service-152999"
+                                            name="152999"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-145952" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
+                                        <label for="contact-label-service-152999" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-145953"
-                                            name="145953"
+                                            id="contact-service-153000"
+                                            name="153000"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-145953" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
+                                        <label for="contact-label-service-153000" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-145954"
-                                            name="145954"
+                                            id="contact-service-153001"
+                                            name="153001"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-145954" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
+                                        <label for="contact-label-service-153001" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-145955"
-                                            name="145955"
+                                            id="contact-service-153002"
+                                            name="153002"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-145955" class="ml-3 text-sm font-medium text-gray-700">Hardscape Cleaning</label>
+                                        <label for="contact-label-service-153002" class="ml-3 text-sm font-medium text-gray-700">Hardscape Cleaning</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-145956"
-                                            name="145956"
+                                            id="contact-service-153003"
+                                            name="153003"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-145956" class="ml-3 text-sm font-medium text-gray-700">Auto Detailing</label>
+                                        <label for="contact-label-service-153003" class="ml-3 text-sm font-medium text-gray-700">Auto Detailing</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-145957"
-                                            name="145957"
+                                            id="contact-service-153004"
+                                            name="153004"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-145957" class="ml-3 text-sm font-medium text-gray-700">Boat Detailing</label>
+                                        <label for="contact-label-service-153004" class="ml-3 text-sm font-medium text-gray-700">Boat Detailing</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-145958"
-                                            name="145958"
+                                            id="contact-service-153005"
+                                            name="153005"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-145958" class="ml-3 text-sm font-medium text-gray-700">Home Gutter Cleaning</label>
+                                        <label for="contact-label-service-153005" class="ml-3 text-sm font-medium text-gray-700">Home Gutter Cleaning</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-145959"
-                                            name="145959"
+                                            id="contact-service-153006"
+                                            name="153006"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-145959" class="ml-3 text-sm font-medium text-gray-700">Gutter Guard Installation</label>
+                                        <label for="contact-label-service-153006" class="ml-3 text-sm font-medium text-gray-700">Gutter Guard Installation</label>
                                     </div>
                                 
                             </div>
@@ -2243,7 +2254,7 @@
                     <!-- Yelp Link -->
                     
                     <li>
-                        <a target="_blank" rel="noopener noreferrer" href="//https://facebook.com/CoastalHomeAndAutoDetailing/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/CoastalHomeAndAutoDetailing/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
                     </li>
                     
                 </ul>
